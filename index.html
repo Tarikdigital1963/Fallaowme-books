@@ -2,107 +2,131 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8" />
-  <title>كتب طارق | Fallaowme</title>
+  <title>إصدارات الكاتب طارق</title>
   <style>
     body {
-      font-family: Tahoma, sans-serif;
-      background-color: #000000; /* الخلفية سوداء */
-      color: #ffffff; /* النص أبيض */
+      background-color: #121212;
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 30px;
       text-align: center;
-      padding: 40px;
       direction: rtl;
     }
     h1 {
-      color: #00c3ff;
-      margin-bottom: 40px;
+      color: #00bcd4;
+      margin-bottom: 30px;
+    }
+    .book-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
     }
     .book {
-      display: inline-block;
-      width: 250px;
-      margin: 20px;
-      padding: 15px;
-      background-color: #1a1a1a; /* خلفية البوك غامقة */
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-      vertical-align: top;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      width: 260px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .book:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,188,212,0.7);
     }
     .book img {
       width: 100%;
       height: auto;
       border-radius: 8px;
+      margin-bottom: 15px;
     }
     .book h2 {
+      margin: 12px 0;
       font-size: 1.2em;
-      margin: 15px 0 10px;
-      color: #f2f2f2;
+      color: #00bcd4;
     }
     .book p {
       font-size: 0.95em;
       color: #ccc;
+      min-height: 60px;
     }
     .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #00c3ff;
-      color: black;
+      margin-top: 12px;
+      padding: 10px 18px;
+      background-color: #00bcd4;
+      color: #121212;
       text-decoration: none;
       border-radius: 6px;
-      font-weight: bold;
+      font-weight: 600;
       transition: background-color 0.3s ease;
     }
     .btn:hover {
-      background-color: #0099cc;
+      background-color: #0097a7;
+      color: white;
     }
     .footer {
       margin-top: 50px;
       font-size: 0.9em;
-      color: #999;
+      color: #777;
     }
     .footer a {
-      color: #00c3ff;
+      color: #00bcd4;
       text-decoration: none;
     }
     .footer a:hover {
       text-decoration: underline;
     }
+    .author {
+      margin-bottom: 40px;
+      font-size: 1.1em;
+      color: #bbb;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 </head>
 <body>
-
   <h1>📚 إصدارات الكاتب طارق</h1>
 
-  <div class="book">
-    <img src="book1.jpg" alt="كلمات التأمل">
-    <h2>كلمات التأمل</h2>
-    <p>تأملات داخلية صامتة تنبض بالروح والفكر.</p>
-    <a href="https://payhip.com/b/AmEXw" class="btn">شراء بـ 5$</a>
+  <div class="author">
+    مرحباً بكم في مجموعة إصدارات الكاتب طارق، حيث نغوص في عوالم الفكر والتأمل والتحولات الجيوسياسية، لنقدم لكم محتوى ثري ومتنوع.
   </div>
 
-  <div class="book">
-    <img src="book2.jpg" alt="المغرب الأطلسي">
-    <h2>المغرب الأطلسي</h2>
-    <p>تحليل جيوسياسي لموقع المغرب في عالم جديد.</p>
-    <a href="https://payhip.com/b/sw6KQ" class="btn">شراء بـ 7.99$</a>
-  </div>
+  <div class="book-list">
+    <div class="book">
+      <img src="book1.jpg" alt="كلمات التأمل" />
+      <h2>كلمات التأمل</h2>
+      <p>تأملات داخلية صامتة تنبض بالروح والفكر.</p>
+      <a href="https://payhip.com/b/AmEXw" class="btn">شراء بـ 5$</a>
+    </div>
 
-  <div class="book">
-    <img src="book3.jpg" alt="Atlantic Marocco">
-    <h2>Atlantic Marocco</h2>
-    <p>English edition about Morocco's geopolitical rise.</p>
-    <a href="https://payhip.com/b/jOoH2" class="btn">Buy for $12</a>
-  </div>
+    <div class="book">
+      <img src="book2.jpg" alt="المغرب الأطلسي" />
+      <h2>المغرب الأطلسي</h2>
+      <p>تحليل جيوسياسي لموقع المغرب في عالم جديد.</p>
+      <a href="https://payhip.com/b/sw6KQ" class="btn">شراء بـ 7.99$</a>
+    </div>
 
-  <div class="book">
-    <img src="book4.jpg" alt="التحولات الجيوسياسية">
-    <h2>التحولات الجيوسياسية</h2>
-    <p>قراءة في التغيرات السياسية في العالم العربي.</p>
-    <a href="#" class="btn">قريبًا</a>
+    <div class="book">
+      <img src="book3.jpg" alt="Atlantic Marocco" />
+      <h2>Atlantic Marocco</h2>
+      <p>English edition about Morocco's geopolitical rise.</p>
+      <a href="https://payhip.com/b/jOoH2" class="btn">Buy for $12</a>
+    </div>
+
+    <div class="book">
+      <img src="book4.jpg" alt="التحولات الجيوسياسية" />
+      <h2>التحولات الجيوسياسية</h2>
+      <p>قراءة في التغيرات السياسية في العالم العربي.</p>
+      <a href="#" class="btn">قريبًا</a>
+    </div>
   </div>
 
   <div class="footer">
     🔗 تابع جديد المؤلفات على <a href="https://payhip.com/Fallaowme" target="_blank">متجر Fallaowme</a>
   </div>
-
 </body>
 </html>
